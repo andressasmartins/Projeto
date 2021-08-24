@@ -6,4 +6,4 @@
 
  O HTML da página foi estruturado utilizando tags semânticas para acessibilidade e otimização para SEO.
 
-O template utilizado como inspiração para a realização deste projeto foi originalmente desenvolvido pela <a href="https://quanticalabs.com/" target="_blank">QuanticaLabs<a>
+O template utilizado como inspiração para a realização deste projeto foi originalmente desenvolvido pela <a href="https://quanticalabs.com/">QuanticaLabs<a>
