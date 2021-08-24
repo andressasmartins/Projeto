@@ -1,5 +1,5 @@
 * {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
 }    
 body {
     margin: 0px;
@@ -206,12 +206,24 @@ article .news_title {
 	color:#000000;
 	font-size:23px;
 }
-article .news_resume,
-.department_desc_active {
+article .news_resume {
 	color:#5c5c5c;
 	line-height:20px;
 	font-size:14px;
 	margin-bottom:30px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.show_all {
+    width: 100%;
+    text-align: end;
+    padding-bottom: 50px;
+    font-size: 14;
+    
+}
+
+aside .widget {
+    padding-right: 10px;
 }
 
 .department_title_active {
@@ -232,6 +244,14 @@ article .news_resume,
     padding-bottom: 20px;
           
 }
+.department_desc_active {
+    color:#5c5c5c;
+	line-height:20px;
+	font-size:14px;
+	margin-bottom:30px;
+   
+}
+
 .department_active_buttons {
     text-align: end;
 }
@@ -256,11 +276,20 @@ article .news_resume,
     color:#5c5c5c; 
 
 }
+.department:hover {
+    color: #2b4c99;
+    cursor: pointer;
+    
+}
 .department_active {
     flex:2;
     padding-bottom: 10px;
     padding-top: 10px;
     color: #FFFFFF; 
+}
+.department_active:hover {
+    cursor: pointer;
+    
 }
 .signalless {
     font-size: 30px;
@@ -271,6 +300,27 @@ article .news_resume,
     color:#0079c7; 
  }
 
+.makeappointment_desc {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color:#5c5c5c;
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom: 1px solid #e6e6e6 ;
+}
+.appointment_contacts {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#5c5c5c;
+    font-size: 14px;
+    border-bottom: 1px solid #e6e6e6 ;
+    
+}
+.appointment_contacts a {
+    color:#2b4c99;
+    text-decoration: none;
+    border-bottom: 1px dotted #2b4c99;
+}
    
 footer {
 	background-color:#1e1e1e;
@@ -319,7 +369,7 @@ footer {
 .fm_1 .fm_1_title,
 .fm_2 .fm_2_title,
 .fm_3 .fm_3_title {
-        font-size: 21px;
+        font-size: 23px;
     padding-bottom: 10px;
 }
 .fm_1_desc,
@@ -327,14 +377,10 @@ footer {
 .fm_3_desc {
     
     line-height: 20px;
+    font-size: 14px;
 
 }
-.fm_1_desc img,
-.fm_2_desc img,
-.fm_3_desc img {
-    width: 15px;
-    height: 10px;
-}
+
 .footer_areaitem .widget_title_text {
     color: #FFFFFF;
 }
