@@ -23,6 +23,7 @@ header {
 .menu {
     display: flex;
     align-items: center;
+    overflow-wrap: break-word;
 }
 nav ul,
 nav li {
@@ -234,7 +235,9 @@ aside .widget {
     display: flex;
 }
 
-.department_area {
+.department_area,
+.latestpost_title_area,
+.latesttweets_title_area {
     display: flex;
 }
 .department_area img {
@@ -274,8 +277,8 @@ aside .widget {
     padding-bottom: 10px;
     padding-top: 10px;
     color:#5c5c5c; 
-
 }
+
 .department:hover {
     color: #2b4c99;
     cursor: pointer;
@@ -299,6 +302,7 @@ aside .widget {
     font-size: 30px;
     color:#0079c7; 
  }
+ 
 
 .makeappointment_desc {
     padding-top: 20px;
@@ -316,6 +320,10 @@ aside .widget {
     border-bottom: 1px solid #e6e6e6 ;
     
 }
+.appointment_contacts img {
+    width: 22px;
+    
+} 
 .appointment_contacts a {
     color:#2b4c99;
     text-decoration: none;
@@ -393,10 +401,57 @@ footer {
     flex:1;
     padding-right: 10px;
 }
+.address_area .contact a {
+    color:#aaaaaa;
+    text-decoration: none;
+}
+.address_area .contact a:hover {
+    border-bottom: #FFFFFF 1px solid;
+}
+
+.latest_posts_item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 .widget_body .latest_posts_item {
     color: #aaaaaa;
     line-height: 20px;
-    }
+}
+.widget_body .latest_posts_item a {
+    text-decoration: none;
+    color: #aaaaaa;
+
+}
+.widget_body .latest_posts_item a:hover {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.latestpost_arrows,
+.latesttweets_arrows {
+    font-size: 30px;
+    color: #FFFFFF;
+
+}
+.latestpost_arrows button ,
+.latesttweets_arrows button{
+    background-color: #1e1e1e;
+    color: #FFFFFF;
+    border: solid 1px #5c5c5c;
+    margin-right: 2px;
+    
+}
+.latestpost_arrows button:hover ,
+.latesttweets_arrows button:hover {
+    border: 1px solid #0079c7;
+}
+.widget_title_text {
+    flex:3;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+
 .widget_body .postdates {
     color: #0079c7;
     padding-bottom: 20px;
@@ -404,6 +459,13 @@ footer {
 .widget_body .latest_tweetsitem {
     color: #5c5c5c;
     line-height: 20px;
+}
+.latest_tweetsitem a {
+    color: #5c5c5c;
+    text-decoration: none;
+}
+.latest_tweetsitem a:hover {
+    color: #727272;
 }
 .widget_body .postdates {
     color: #0079c7;
@@ -423,7 +485,6 @@ footer {
 	width:40px;
 	height:40px;
 	margin-top:40px;
-	margin-bottom:40px;
 	margin-right:20px;
 }
 
@@ -439,10 +500,12 @@ footer {
 	}
 	.banner_headline h1 {
 		font-size:55px;
+        text-shadow: 1px 1px 1px rgb(94, 94, 94);
 	}
 	.banner_headline h2 {
-		font-size:17px;
-	}
+		font-size:20px;
+        text-shadow: 1px 1px 1px rgb(94, 94, 94);
+}
 
 	.banner_options {
 		height:auto;
@@ -457,6 +520,9 @@ footer {
 	#geral aside {
 		padding:20px;
 	}
+    section {
+        margin-top: 20%;
+    }
 
 	.footer_menu {
 		flex-direction:column;
@@ -485,9 +551,11 @@ footer {
 
 	header {
 		height:auto;
+        
+        
 	}
 	.logo {
-		padding-left:20px;
+		padding:2%;
 	}
 
 	.menuMobile {

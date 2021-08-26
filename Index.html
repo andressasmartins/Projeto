@@ -1,32 +1,46 @@
-<html>
+ <html>
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width,user-scalable=0"/>
         <link rel="stylesheet" type="text/css" href="assets/css/Template.css"/>
+        
+        <script type="text/javascript">
+            window.onload = function(){
+                document.querySelector(".menuMobile").addEventListener("click", function(){
+                    if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                        document.querySelector(".menu nav ul").style.display = 'none';
+                    } else {
+                        document.querySelector(".menu nav ul").style.display = 'flex';
+                    }
+                });
+            };
+            </script>
         <title>MediCenter</title>
     </head>
     <body>
         <header>
             <div class="container">
                 <div class="logo">
-                    <a href="Index.html">
-                        <img src="assets/Images/logo.png">
-                    </a>
+                    <a href=""><img src="assets/images/logo.png" /></a>
                 </div>
-                
                 <div class="menu">
                     <nav>
+                        <div class="menuMobile">
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                        </div>
                         <ul>
-                            <li class="active">
-                                 <a href=""> Home</a> </li>
-                            <li> <a href=""> Home</a> </li>
-                            <li> <a href=""> Home</a> </li>
-                            <li> <a href=""> Home</a> </li>
-                            <li> <a href=""> Home</a> </li>
-                            <li> <a href=""> Home</a> </li>
-                        </ul>                     
+                            <li class="active"><a href="">HOME</a></li>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">HOME</a></li>
+                        </ul>
                     </nav>
                 </div>
+            </div>
         </header>
         <section id="banner">
             <div class="container column">
@@ -46,8 +60,7 @@
                         <a href="">Read more</a>
                     </div>
                     <div class="banner3">
-                        <div class="banner_title_openhours">Opening Hours</div>
-                        <div class="banner_hours"> 
+                        <div class="banner_title_openhours">Opening Hours </div> 
                             <div class="emergencyhours">
                                 <div> Emergency </div>
                                 <div class="hour"> 24hours a day </div>
@@ -61,14 +74,15 @@
                                 <div class="hour"> 8:00 - 19:00 </div>                          
                             </div>
                         </div>
-                 </div>
+                        </div>
+                 
             </div>
         </section>
 
         <section id="geral">
             <div class="container">
                 <section>
-                    <div class="widget">
+                    <div class="widget"> 
                         <div class="widget_title">
                             <div class="widget_title_text">Latest News</div>
                             <div class="widget_title_bar"></div>
@@ -221,14 +235,17 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin.
                             </div>
                             <div class="appointment_contacts">
+                                <img src="assets/Images/phone.png"/>
                                 by phone: <strong>1-800-643-4300</strong>
                             </div>
                             <div class="appointment_contacts">
+                                <img src="assets/Images/email.png"/>
                                 by e-mail: <a href="">medicenter@mail.com</a>
                                 
                             </div>
                             <div class="appointment_contacts">
-                                or <a href="">fill in the form</a> on our contact page
+                               <img src="assets/Images/form.png"/>
+                               or <a href="">fill in the form</a> on our contact page
                             </div>
                         </div>
                     </div>
@@ -291,7 +308,7 @@
                                 <div class="contact">
                                     +123 655 655 <br/>
                                     +123 755 755 <br/>
-                                    medicenter@email.com <br/>
+                                    <a href=""> medicenter@email.com </a>
                                 </div>
                             </div>
                         </div>
@@ -299,53 +316,64 @@
                     <div class="footer_areaitem">
                         <div class="widget">
                             <div class="widget_title">
+                                <div class="latestpost_title_area">
                                 <div class="widget_title_text">Latest Posts</div>
+                                <div class="latestpost_arrows"> <button>⬅</button><button>➡</button></div>
+                                </div>
                                 <div class="widget_title_bar"></div>
                             </div>
+                            
+
                             <div class="widget_body">
                                 <div class="latest_posts_item">
-                                    Mauris adipiscing mauris fringilla turpis interdum pulvinar nisi malesuada.
-                                </div>
-                                <div class="postdates">
-                                    9 months ago.
-                                </div>
-                                <div class="latest_posts_item">
-                                    Mauris adipiscing mauris fringilla turpis interdum pulvinar nisi malesuada.
-                                </div>
-                                <div class="postdates">
-                                    10 months ago.
-                                </div>
-                                <div class="latest_posts_item">
-                                    Mauris adipiscing mauris fringilla turpis interdum pulvinar nisi malesuada.
-                                </div>
-                                <div class="postdates">
-                                    about a year ago.
-                                </div>
-                                
+                                    <ul>
+                                        <li>
+                                         <a href="" >Mauris adipiscing mauris fringilla turpis interdum pulvinar nisi malesuada.</a>
+                                        <div class="postdates">
+                                            9 months ago.
+                                        </div>
+                                        </li>
+                                        <li>
+                                            <a href="" >Mauris adipiscing mauris fringilla turpis interdum pulvinar nisi malesuada.</a>
+                                           <div class="postdates">
+                                               9 months ago.
+                                           </div>
+                                           </li>
+                                           <li>
+                                            <a href="" >Mauris adipiscing mauris fringilla turpis interdum pulvinar nisi malesuada.</a>
+                                           <div class="postdates">
+                                               9 months ago.
+                                           </div>
+                                        </li>
+                                    </ul> 
+                                    </div>                                     
                             </div>
                         </div>
                     </div>
                     <div class="footer_areaitem">
                         <div class="widget">
                             <div class="widget_title">
-                                <div class="widget_title_text">Latest Tweets</div>
+                                <div class="latesttweets_title_area">
+                                    <div class="widget_title_text">Latest Tweets</div>
+                                    <div class="latesttweets_arrows"> <button>⬅</button><button>➡</button></div>
+                                    </div>
                                 <div class="widget_title_bar"></div>
                             </div>
                             <div class="widget_body">
                                 <div class="latest_tweetsitem">
-                                    ➡ @ashleyyy We are glad to hear that! Have a nice day!
+                                     ➡ <a href=""> @ashleyyy We are glad to hear that! Have a nice day!</a>
                                 </div>
                                 <div class="postdates">
                                     11 minutes ago.
                                 </div>
                                 <div class="latest_tweetsitem">
-                                    ➡ A huge thanks to all who support our work and to all of our doctors. We keep doing the best for our patients!
+                                    ➡ <a href=""> A huge thanks to all who support our work and to all of our doctors. We keep doing the best for our patients! </a>
                                 </div>
                                 <div class="postdates">
                                     a week ago.
                                 </div>
                                 <div class="latest_tweetsitem">
-                                    ➡ Merry Christmas to everyone!
+                                    ➡ <a href=""> Merry Christmas to everyone! </a>
                                 </div>
                                 <div class="postdates">
                                     a week ago.
